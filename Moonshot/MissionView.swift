@@ -24,7 +24,9 @@ struct MissionView: View {
                     .scaledToFit()
                     .containerRelativeFrame(.horizontal) { width, axis in width * 0.6
                     }
-                
+                VStack {
+                    Text("Launch Date: \(mission.formattedLaunchDate)")
+                }
                 Rectangle()
                     .foregroundStyle(.lightBackground)
                     .frame(height: 2)
